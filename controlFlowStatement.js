@@ -75,3 +75,113 @@ for (let i = 1; i <= 6; i++) {
     if (i + j === 6) console.log(`[${i}, ${j}]`);
   }
 }
+
+// 11. 삼각형 출력하기 - pattern 1
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 0; j <= i; j++) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 12. 삼각형 출력하기 - pattern 2
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 0; j < i; j++) {
+    triangle += ' ';
+  }
+  for ( let k = 5; k > i; k--) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 13. 삼각형 출력하기 - pattern 3
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 5; j > i; j--) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 14. 삼각형 출력하기 - pattern 4
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 1; j < 5-i; j++) {
+    triangle += ' ';
+  }
+  for ( let k = 0; k <= i; k++) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 15. 정삼각형 출력하기
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 5; j > i+1; j--) {
+    triangle += ' ';
+  }
+  for ( let k = 0; k < 2*i+1; k++) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 16. 역정삼각형 출력하기
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 0; j < i; j++) {
+    triangle += ' ';
+  }
+  for ( let k = 9; k >= 2*i+1; k--) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 17. 다이아몬드 출력하기
+for ( let i = 0; i < 5; i++) {
+  var triangle = '';
+  for ( let j = 5; j > i+1; j--) {
+    triangle += ' ';
+  }
+  for ( let k = 0; k < 2*i+1; k++) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+for ( let i = 0; i < 4; i++) {
+  var triangle = '';
+  for ( let j = 0; j <= i; j++) {
+    triangle += ' ';
+  }
+  for ( let k = 7; k >= 2*i+1; k--) {
+    triangle += '*';
+  }
+  console.log(triangle);
+}
+
+// 18. 별찍기 심화
+for(var i=0; i<5; i++){
+  var triangle = "";
+  for(var j=0; j<5; j++){
+    if(j<5-i){
+      triangle = triangle+"*";
+    }
+    else{
+      triangle = triangle+" ";
+    }
+  }
+  for(var j=0; j<5; j++){
+    if(j>=i){
+      triangle = triangle+"*";
+    }
+    else{
+      triangle = triangle+" ";
+    }
+  }
+  console.log(triangle);
+}
